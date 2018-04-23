@@ -1,4 +1,4 @@
-package arrayandstring;
+package arrayAndString;
 
 public class ZeroMatrix {
 	public static void main(String[] args) {

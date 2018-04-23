@@ -1,4 +1,4 @@
-package arrayandstring;
+package arrayAndString;
 
 public class PalindromePermutation {
 	public static void main(String[] args) {
