@@ -1,7 +1,5 @@
 package problems;
 
-import java.util.Stack;
-
 class TreeNode {
 	int val;
 	TreeNode left;
