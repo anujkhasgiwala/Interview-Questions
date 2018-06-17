@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;identifiers&apos; in &apos;amazon.LogSorting.reorderLines(...)&apos; to &apos;keywords&apos;&#x0D;&#x0A;- Original project: &apos;Test&apos;&#x0D;&#x0A;- Original element: &apos;amazon.LogSorting.reorderLines(int, List&lt;String&gt;).identifiers&apos;&#x0D;&#x0A;- Renamed element: &apos;identifiers&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;identifiers&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;amazon{LogSorting.java[LogSorting~reorderLines~I~QList\&lt;QString;&gt;;@identifiers!322!359!329!339!\[QString;!0!false" name="keywords" references="true" stamp="1529195891191" version="1.0"/>
+</session>
