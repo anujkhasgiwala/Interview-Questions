@@ -14,7 +14,7 @@ public class LogSorting {
 			if(keywords[1].matches(".*\\d.*")) {
 				numericLogs.add(log);
 			} else {
-				wordLogs.add(log);
+				wordLogs.add(log.toLowerCase());
 			}
 		}
 		
@@ -33,6 +33,11 @@ public class LogSorting {
         public int compare(String o1, String o2) {
             String s1 = o1.substring(o1.indexOf(' '));
             String s2 = o2.substring(o2.indexOf(' '));
+            if(s1.equals(s2)) {
+            	s1 = o1.split(" ")[0];
+            	s2 = o2.split(" ")[0];
+            	return s1.compareTo(s2);
+            }
             return s1.compareTo(s2);
         }
 
@@ -43,7 +48,7 @@ public class LogSorting {
 		logLines.add("a1 9 2 3 1");
 		logLines.add("g1 act car");
 		logLines.add("zo4 4 7");
-		logLines.add("ab1 off key dog");
+		logLines.add("ab1 act car");
 		logLines.add("a8 act zoo");
 		reorderLines(5, logLines);
 	}
