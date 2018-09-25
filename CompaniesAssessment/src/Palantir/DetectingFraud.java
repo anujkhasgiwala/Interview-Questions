@@ -1,4 +1,4 @@
-package Palantir;
+package palantir;
 
 import java.util.*;
 

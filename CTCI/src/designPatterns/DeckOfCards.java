@@ -33,10 +33,11 @@ class Deck<T extends Card> {
 	}
 
 	public T[] dealHand(int number) {
+		return null;
 	}
 
 	public T dealCard() {
-
+		return null;
 	}
 }
 

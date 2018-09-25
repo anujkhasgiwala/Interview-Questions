@@ -9,13 +9,17 @@ public class ValidAnagram {
 		if(s.length() != t.length())
 			return false;
 
-		boolean flag = false;
-		if(t.indexOf(s) <= 1)
-			return false;
-		else
-			return true;
-        /*for(int i = 0; i < s.length(); i++) {
-        	
-        }*/        	
+		int alphabet[] = new int[26];
+		
+		for(int i = 0; i < s.length(); i++) {
+			alphabet[s.charAt(i) - 'a']++;
+			alphabet[t.charAt(i) - 'a']--;
+		}
+		
+		for (int i : alphabet)
+			if (i != 0)
+				return false;
+
+        return true;
     }
 }
