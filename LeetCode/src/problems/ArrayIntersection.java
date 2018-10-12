@@ -1,10 +1,31 @@
 package problems;
 
+import java.util.*;
+
 public class ArrayIntersection {
     public int[] intersect(int[] nums1, int[] nums2) {
-        int length = nums1.length > nums2.length ? nums2.length : nums1.length;
-        int intersection[] = new int[length];
+        Map<Integer, Integer> map = new HashMap<Integer, Integer>();
+        List<Integer> intersect = new ArrayList<Integer>();
+
+        for(int i = 0; i < nums1.length; i++) {
+            if(map.containsKey(nums1[i]))
+            	map.put(nums1[i], map.get(nums1[i])+1);
+            else
+            	map.put(nums1[i], 1);
+        }
+
+        for(int i = 0; i < nums2.length; i++) {
+            if(map.containsKey(nums2[i]) && map.get(nums2[i]) > 0) {
+            	intersect.add(nums2[i]);
+                map.put(nums2[i], map.get(nums2[i])-1);
+            }
+        }
         
+        int intersection[] = new int[intersect.size()];        
+        for(int i = 0; i < intersect.size(); i++) {
+            intersection[i] = intersect.get(i);
+        }
+
         return intersection;
     }
 }
