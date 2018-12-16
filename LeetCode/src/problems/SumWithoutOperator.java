@@ -2,6 +2,11 @@ package problems;
 
 public class SumWithoutOperator {
 	public int getSum(int a, int b) {
-        return 0;
+        while(b != 0) {
+            int carry = a & b;
+            a = a ^ b;
+            b = carry << 1;
+        }
+	    return a;
     }
 }

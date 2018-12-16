@@ -1,27 +1,20 @@
 package problems;
 
+import java.util.Arrays;
+
 public class CountPrimes {
     public int countPrimes(int n) {
-        if(n == 0 || n == 1)
-            return 0;
+        boolean[] notPrime = new boolean[n];
         int count = 0;
-        while(n > 1) {
-            if(isPrime(n))
+        for (int i = 2; i < n; i++) {
+            if (notPrime[i] == false) {
                 count++;
-        }
-
-        return count;
-    }
-
-    public boolean isPrime(int n) {
-        int temp;
-        for(int i = 2; i <= n/2; i++) {
-            temp = n%i;
-            if(temp==0) {
-                return false;
+                for (int j = 2; i*j < n; j++) {
+                    notPrime[i*j] = true;
+                }
             }
         }
 
-        return true;
+        return count;
     }
 }
