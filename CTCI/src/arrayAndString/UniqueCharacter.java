@@ -7,12 +7,14 @@ public class UniqueCharacter {
 	}
 	
 	static boolean isUnique(String str) {
-		for(int i = 0; i< str.length(); i++) {
-			for(int j=1; j<str.length(); j++)
-			if(str.charAt(i) == str.charAt(j)) {
+		boolean alphabets[] = new boolean[26];
+		for (int i = 0; i < str.length(); i++) {
+			int value = str.charAt(i) - 'A';
+			if (alphabets[value])
 				return false;
-			}
+			alphabets[value] = true;
 		}
+
 		return true;
 	}
 }

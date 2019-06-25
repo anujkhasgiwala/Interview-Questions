@@ -8,33 +8,29 @@ public class KthToLast {
 	public static void main(String[] args) {
 		Node head=null;
 		int k=1;
-		recursive(head, k);
-		iterative(head, k);
+		kthToLast(head, k);
 	}
 	
-	static int recursive(Node head, int k) {
-		if(head == null)
-			return 0;
-		int i = recursive(head.next, k)+1;
-		if(i==k)
-			System.out.println(head.data);
-		return i;
-	}
-	
-	static void iterative(Node head, int k) {
+	static void kthToLast(Node head, int k) {
 		if(head == null)
 			return;
-		Node curr = head;
-		while(k>0) {
-			curr = curr.next;
-			k--;
+
+		Node main = head, ref = head, temp = head;
+		int count = 0;
+
+		while(count < k) {
+			if(ref == null) {
+				System.out.println("not possible");
+			}
+			ref = ref.next;
+			count ++;
 		}
-		
-		Node next = head;
-		while(curr != null) {
-			curr = curr.next;
-			next = next.next;
+
+		while(ref != null) {
+			main = main.next;
+			ref = ref.next;
 		}
-		System.out.println(next.data);
+
+		System.out.println(main.data);
 	}
 }

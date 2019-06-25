@@ -1,5 +1,5 @@
 package linkedlist;
-//preserve the order of node occurence
+
 public class PartitionList {
 	static class Node{
 		int data;
@@ -8,7 +8,8 @@ public class PartitionList {
 	public static void main(String[] args) {
 		
 	}
-	
+
+	//preserve the order of node occurence
 	static void partition(Node list, int x) {
 		Node head = list, tail = list; //create new list
 		
