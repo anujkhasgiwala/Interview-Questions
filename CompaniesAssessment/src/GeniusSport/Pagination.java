@@ -38,8 +38,8 @@ public class Pagination {
 
 
         List resultItems = new ArrayList();
-
-        for (int i = offset; i < offset + itemPerPage; i++) {
+        int total = offset + itemPerPage;
+        for (int i = offset; i < total; i++) {
             resultItems.add(items.get(i).get(0));
         }
 
