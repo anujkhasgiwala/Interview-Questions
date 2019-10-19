@@ -27,6 +27,7 @@ public class MovieTitles {
         }
 
         bw.close();
+        in.close();
     }
 
     static String[] getMovieTitles(String substr) {
