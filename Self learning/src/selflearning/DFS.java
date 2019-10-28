@@ -1,5 +1,13 @@
+package selflearning;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class DFS {
-    void traverse(int s) {
+	int V;
+	LinkedList<Integer> adj[];
+    
+	void traverse(int s) {
         boolean visited[] = new boolean[V];
         util(s, visited);
     }

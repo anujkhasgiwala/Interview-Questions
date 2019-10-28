@@ -1,3 +1,5 @@
+package selflearning;
+
 public class StringPermute {
     public void permute(String str, int l, int r) {
         if(l == r)

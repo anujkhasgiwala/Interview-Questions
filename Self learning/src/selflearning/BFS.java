@@ -1,4 +1,12 @@
+package selflearning;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class BFS {
+	int V;
+	LinkedList<Integer> adj[];
+	
     void traverse(int s) {
         boolean visited[] = new boolean[V];
 
@@ -9,7 +17,7 @@ public class BFS {
             s = queue.poll();
             System.out.print(s + " ");
 
-            Iterator i = adj[s].listIterator();
+            Iterator<Integer> i = adj[s].listIterator();
             while(i.hasNext()) {
                 int n = i.next();
                 if(!visited[n]) {

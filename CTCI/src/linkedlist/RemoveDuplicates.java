@@ -1,7 +1,5 @@
 package linkedlist;
 
-import java.util.HashSet;
-
 public class RemoveDuplicates {
 	static class Node{
 		int data;

@@ -1,3 +1,5 @@
+package selflearning;
+
 public class ArrayLeftRotation {
     public void leftRotate(int arr[], int d) {
         if (d == 0)

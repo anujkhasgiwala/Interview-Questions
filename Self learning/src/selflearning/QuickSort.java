@@ -1,3 +1,5 @@
+package selflearning;
+
 public class QuickSort {
     public void sort(int arr[], int l, int r) {
         if(l < r) {

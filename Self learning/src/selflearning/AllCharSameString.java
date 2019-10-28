@@ -1,3 +1,5 @@
+package selflearning;
+
 public class AllCharSameString {
     static boolean allSame(String str) {
         int l = 0, r = str.length() - 1;

@@ -26,5 +26,7 @@ public class DynamicArray {
 				System.out.println(lastAnswer);
 			}
 		}
+		
+		sc.close();
 	}
 }

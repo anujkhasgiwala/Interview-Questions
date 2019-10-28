@@ -22,5 +22,6 @@ public class Manipulation {
 		    if(temp> max) max=temp;
 		}
 		System.out.println(max);
+		sc.close();
 	}
 }

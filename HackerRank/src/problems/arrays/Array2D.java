@@ -24,5 +24,7 @@ public class Array2D {
 			}			
 		}
 		System.out.print(sum);
+		
+		sc.close();
 	}
 }

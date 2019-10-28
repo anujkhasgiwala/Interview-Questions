@@ -11,7 +11,7 @@ class TimeMap {
     
     public void set(String key, String value, int timestamp) {
     	if (!map.containsKey(key))
-            map.put(key, new TreeMap());
+            map.put(key, new TreeMap<Integer, String>());
 
         map.get(key).put(timestamp, value);
     }

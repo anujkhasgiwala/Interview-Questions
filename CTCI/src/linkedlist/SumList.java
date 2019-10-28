@@ -1,4 +1,5 @@
 package linkedlist;
+
 //This code need to modify minor things based on linked list
 public class SumList {
 

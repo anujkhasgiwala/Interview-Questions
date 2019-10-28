@@ -15,7 +15,7 @@ public class KthToLast {
 		if(head == null)
 			return;
 
-		Node main = head, ref = head, temp = head;
+		Node main = head, ref = head;
 		int count = 0;
 
 		while(count < k) {
