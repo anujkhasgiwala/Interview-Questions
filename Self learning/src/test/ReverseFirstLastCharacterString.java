@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Arrays;
-
 public class ReverseFirstLastCharacterString {
     public static void main(String[] args) {
         reverseFirstLast("geeks for geeks");
