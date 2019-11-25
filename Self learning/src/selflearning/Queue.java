@@ -1,4 +1,4 @@
-package test;
+package selflearning;
 
 public class Queue {
 	int front, rear, capacity;

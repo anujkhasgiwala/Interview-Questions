@@ -1,4 +1,4 @@
-package test;
+package selflearning;
 
 public class ReverseFirstLastCharacterString {
     public static void main(String[] args) {

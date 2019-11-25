@@ -1,4 +1,4 @@
-package test;
+package selflearning;
 
 public class Stack {
 	int top, capacity;
