@@ -6,7 +6,7 @@ public class KthLargestUsingHeap {
 	int kthLargest(int nums[], int k) {
 		PriorityQueue<Integer> queue = new PriorityQueue<Integer>(k);
 		
-		for(int num: nums) {
+		for(int num : nums) {
 			queue.add(num);
 			
 			if(queue.size() > k)
