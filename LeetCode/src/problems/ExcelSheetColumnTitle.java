@@ -2,10 +2,6 @@ package problems;
 
 public class ExcelSheetColumnTitle {
     public String convertToTitle(int n) {
-        String columnTitle =
-    }
-
-    public static void main(String[] args) {
-        new ExcelSheetColumnTitle().convertToTitle(25);
+        return n == 0 ? "" : convertToTitle((n - 1) / 26) + (char) ((n - 1) % 26 + 'A');
     }
 }

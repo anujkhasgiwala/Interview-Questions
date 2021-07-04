@@ -2,7 +2,7 @@ package problems;
 
 import java.util.Stack;
 
-public class ValidParentheses {
+public class ValidParenthesis {
 
 	static boolean isValid(String parathesis) {
 		if(parathesis.length() == 0 || parathesis.equals(""))
