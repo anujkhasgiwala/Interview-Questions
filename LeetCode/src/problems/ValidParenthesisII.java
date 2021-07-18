@@ -11,6 +11,11 @@ public class ValidParenthesisII {
             if (str.charAt(i) == '(') {
                 low++;
                 high++;
+            } else if(str.charAt(i) == ')') {
+                if(low > 0) {
+                    low--;
+                }
+                high--;
             } else {
                 if(low > 0) {
                     low--;
