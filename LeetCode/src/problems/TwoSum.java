@@ -5,17 +5,20 @@ import java.util.Map;
 
 public class TwoSum {
     public int[] twoSum(int[] nums, int target) {
-        Map<Integer, Integer> diffIndex = new HashMap<>();
-        int index1 = 0, index2 = 0;
+        Map<Integer, Integer> remain = new HashMap();
+        int indexes[] = new int[2];
+
         for (int i = 0; i < nums.length; i++) {
-            if (diffIndex.containsKey(target - nums[i])) {
-                index1 = diffIndex.get(target - nums[i]);
-                index2 = i;
+            int diff = target - nums[i];
+            if(remain.containsKey(nums[i])) {
+                indexes[0] = remain.get(nums[i]);
+                indexes[1] = i;
                 break;
-            } else {
-                diffIndex.put(target - nums[i], i);
             }
+
+            remain.put(diff, i);
         }
-        return new int[] {index1, index2};
+
+        return indexes;
     }
 }
